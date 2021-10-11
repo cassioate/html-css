@@ -33,55 +33,36 @@
   text-decoration: underline;
 }
 
-body {
-  margin: 0px;
+main {
+  width: 940px;
+  margin: 0 auto;
 }
 
-.principal {
-  background-color: #cccccc;
-  padding: 30px;
+.formulario {
+  margin: 40px 0px;
 }
 
-.banner {
-  width: 100%;
+.formulario label {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
 }
 
-.titulo-principal {
-  padding-left: 20px;
-}
-
-.titulo-central {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-
-.p-2 {
-  font-size: 25px;
-}
-
-em strong {
-  color: red;
-}
-
-.lista-beneficios {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
-}
-
-.beneficios {
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-.item-beneficios {
-  font-style: italic;
-}
-
-.img-beneficios {
+.formulario input {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
   width: 50%;
+}
+
+footer {
+  padding: 20px 0px;
+  text-align: center;
+  background: url("img/bg.jpg");
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  color: white;
 }
