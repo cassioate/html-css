@@ -81,6 +81,22 @@ main {
   /* transform: scale(1.2); */
 }
 
+.tabela {
+  margin: 20px 0 40px;
+}
+
+.tabela thead {
+  background-color: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+.tabela td,
+.tabela th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
 footer {
   padding: 20px 0px;
   text-align: center;
