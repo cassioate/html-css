@@ -43,7 +43,7 @@ main {
 }
 
 .formulario label,
-.formulario p {
+.formulario legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
@@ -59,6 +59,23 @@ main {
 
 .formulario .checkbox {
   margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.enviar:hover {
+  background-color: darkorange;
+  font-size: 20px;
+  transition: 0.5s background;
 }
 
 footer {
