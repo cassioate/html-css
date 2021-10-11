@@ -1,0 +1,91 @@
+.header-logo {
+  background-color: #cccccc;
+  padding: 20px 0px;
+}
+
+.img-nav {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.nav-header {
+  position: absolute;
+  top: 110px;
+  right: 0%;
+}
+
+.nav-header li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+.nav-header a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.nav-header a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.ul-cortes {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.li-cortes {
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 30%;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.li-cortes:hover {
+  border: 2px solid #c78c19;
+}
+
+.li-cortes:hover h2 {
+  font-size: 34px;
+}
+
+.li-cortes:active {
+  border: 2px solid #088c19;
+}
+
+.li-cortes h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.li-cortes .preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.li-cortes .descricao {
+  padding: 0 10%;
+}
+
+footer {
+  padding: 20px 0px;
+  text-align: center;
+  background: url("img/bg.jpg");
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  color: white;
+}
