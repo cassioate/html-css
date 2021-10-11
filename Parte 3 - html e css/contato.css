@@ -42,17 +42,23 @@ main {
   margin: 40px 0px;
 }
 
-.formulario label {
+.formulario label,
+.formulario p {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
 }
 
-.formulario input {
+.formulario .input-padrao,
+.formulario .textarea-padrao {
   display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
   width: 50%;
+}
+
+.formulario .checkbox {
+  margin: 20px 0;
 }
 
 footer {

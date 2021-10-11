@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Contatos-Barbearia</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="contato.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos-Barbearia</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
 
-    <body>
-        <header class="header-logo">
-            <div class="img-nav">
-                <img class="img-logo" src="img/logo.png" alt="">
-                <nav class="nav-header">
-                    <ul class="list-logo">
-                        <li><a href="../Parte 1 - html e css/textoBase.html">Home</a></li>
-                        <li><a href="../Parte 2 - html e css/produtos.html">Produtos</a></li>
-                        <li><a href="./contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<body>
+    <header class="header-logo">
+        <div class="img-nav">
+            <img class="img-logo" src="img/logo.png" alt="">
+            <nav class="nav-header">
+                <ul class="list-logo">
+                    <li><a href="../Parte 1 - html e css/textoBase.html">Home</a></li>
+                    <li><a href="../Parte 2 - html e css/produtos.html">Produtos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <form class="formulario">
+    <main>
+        <form class="formulario">
+            <div class="contato">
                 <label for="nomesobrenome">Nome e sobrenome</label>
-                <input id="nomesobrenome" type="text">
-
+                <input class="input-padrao" id="nomesobrenome" type="text" required>
                 <label for="email">Email</label>
-                <input id="email" type="text">
-
+                <input class="input-padrao" id="email" type="email" placeholder="email@dominio.com">
                 <label for="telefone">Telefone</label>
-                <input id="telefone" type="text">
+                <input class="input-padrao" id="telefone" type="tel" required placeholder="(99)9 9999-9999">>
+                <label for="mensagem">Mensagem</label>
+                <textarea class="textarea-padrao" id="mensagem" name="" id="" cols="70" rows="10"></textarea>
+            </div>
 
-                <input type="submit" value="Enviar formulario">
-            </form>
-        </main>
+            <div class='radio-contato'>
+                <p>Como prefere o nosso contato?</p>
+                <!-- o for e o id irão fazer ligação entre o label e o input
+                <label for="radio-email">Email</label>
+                <input id="radio-email" name="contato" type="radio" value="email"> -->
+                <!-- pode tanto ser feito da forma acima, como também colocar o input denetro do label-->
+                <label for="radio-email">
+                    <input id="radio-email" name="contato" type="radio" value="email">
+                    Email
+                </label>
+                
+                <label for="radio-telefone">
+                    <input id="radio-telefone" name="contato" type="radio" value="telefone">
+                    Telefone
+                </label>
+                <label for="radio-whatsapp">
+                    <input id="radio-whatsapp" name="contato" type="radio" value="whatsapp" checked>
+                    Whatsapp
+                </label>
+                
+            </div>
 
-        <footer>
-            <img src="img/logo-branco.png" alt="">
-            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
-        </footer>
-    </body>
+            <div class="div-selector">
+                <p>Qual horario prefere ser atendido?</p>
+                <select name="seletor" id="seletor-select">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+            
+            <label class="checkbox">
+                <input type="checkbox" checked required>
+                Gostaria de receber nossas novidades por email?
+            </label>
+
+            <input type="submit" value="Enviar formulario">
+        </form>
+
+
+    </main>
+
+    <footer>
+        <img src="img/logo-branco.png" alt="">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+</body>
 
 </html>
