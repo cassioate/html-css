@@ -73,9 +73,12 @@ main {
 }
 
 .enviar:hover {
-  background-color: darkorange;
-  font-size: 20px;
-  transition: 0.5s background;
+  background-color: red;
+
+  transition: 1s background;
+  /* transition: 5s all; <Fara a transição de todos os elementos */
+  transform: rotate(350deg) scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 footer {
