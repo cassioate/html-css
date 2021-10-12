@@ -37,27 +37,32 @@
   width: 100%;
 }
 
-main {
-  width: 940px;
-  margin: 0 auto;
+.principal {
+  background-color: #fefefe;
 }
 
-.principal p {
+.principal .conteudo-principal {
+  width: 940px;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+.principal .conteudo-principal p {
   /*1em criará uma margem proporcional ao tamanho da fonte principal*/
   margin: 0 0 1em;
 }
 
-.principal .utensilios {
+.principal .conteudo-principal .utensilios {
   width: 120px;
   margin: 0 20px 20px 0;
   float: left;
 }
 
-.principal em {
+.principal .conteudo-principal em {
   font-style: italic;
 }
 
-.principal em strong {
+.principal .conteudo-principal em strong {
   font-weight: bold;
 }
 
@@ -72,7 +77,15 @@ main {
 
 .mapa {
   padding: 3em 0;
-  margin: 0 0 2em;
+  /* Esse gradient seria um exemplo dele em 45 graus, indo com laranja até 50% do total e o resto sendo dividido entre blue, red e black.
+  background: linear-gradient(45deg, orange 50%, blue, red, black);
+  */
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa .mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .mapa p {
@@ -81,7 +94,7 @@ main {
 }
 
 .beneficios {
-  background-color: #ffffff;
+  background-color: #888888;
   padding: 3em 0;
 }
 
