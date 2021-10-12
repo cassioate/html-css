@@ -1,3 +1,22 @@
+/*Utilizando calc, ele deverá ser utilizado da seguinte forma:*/
+.calc-1 {
+  background: black;
+  width: 30%;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* os 30% do calc se refere aos 30% do espaço ja utilizado pelo calc-1*/
+/*Lembrando que no HTML as 2 tags tem que ficar coladinha para que o CSS fique com o calculo exato, caso contrario o cal seria calc(100% - 31%)*/
+.calc-2 {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  background: blue;
+  width: calc(100% - 30%);
+}
+
 /* Pegara todos os P que forem filhos/netos/bisnetos/etc de main*/
 /* main p {
   background: red;
