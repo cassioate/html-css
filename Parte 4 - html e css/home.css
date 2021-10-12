@@ -1,3 +1,8 @@
+/*Propriedade que faz com que a pagina desça mais lentamente ao clicar na ancora*/
+html {
+  scroll-behavior: smooth;
+}
+
 .header-logo {
   background-color: #cccccc;
   padding: 20px 0px;
@@ -31,6 +36,11 @@
 .nav-header a:hover {
   color: #c78c19;
   text-decoration: underline;
+}
+
+.nav-header .ancora {
+  opacity: 30%;
+  transition: 5s;
 }
 
 .banner {
@@ -156,6 +166,15 @@ Seleciona qualquer elemento de uma lista, colocando dentro de nth-child a posiç
 
 .img-beneficios {
   width: 60%;
+  /*Adicionei 3 sombras de 3 cores diferentes uma para cada lado*/
+  /*Caso deseje fazer uma sombra que vá para dentro no lugar de para fora, devo utilizar a palavra inset (ex: box-shadow: inset 10px 10px 5px #000*/
+  box-shadow: 10px 10px 5px #000000, -10px -10px #cccccc,
+    -20px 20px rgba(255, 255, 255, 0.25);
+}
+
+.img-beneficios:hover {
+  opacity: 30%;
+  transition: 400ms;
 }
 
 .video-home {
