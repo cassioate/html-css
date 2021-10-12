@@ -1,0 +1,65 @@
+/* Pegara todos os P que forem filhos/netos/bisnetos/etc de main*/
+/* main p {
+  background: red;
+} */
+
+/* Pegara todos os P que forem filhos diretos de main, apenas eles!*/
+/* main > p {
+  background: red;
+} */
+
+/* Pegara o P que estiverem após img, apenas ele!*/
+/* img + p {
+  background: blue;
+} */
+
+/* Para selecionar todos os parágrafos localizados depois de uma imagem usamos o seletor ~ */
+/* img ~ p {
+  background: yellow;
+} */
+
+/*Se quisermos excluir todos os parágrafos que não compõe a classe missao*/
+/* .principal p:not(.missao) {
+  background: orange;
+} */
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Seleciona o ultimo elemento de uma lista
+.item-beneficios:last-child {
+  font-weight: bold;
+}
+Seleciona qualquer elemento de uma lista que seja par
+.item-beneficios:nth-child(2n) {
+  font-weight: bold;
+} 
+Seleciona qualquer elemento de uma lista, colocando dentro de nth-child a posição do elemento
+.item-beneficios:nth-child(4) {
+  font-weight: bold;
+}
+*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*VAI INSERIR o conteudo que voce colocou em content antes do item*/
+/* .item-beneficios:before {
+  content: "★ ";
+} */
+
+/* transforma a primeira letra em negrito
+.titulo-central:first-letter {
+  font-weight: bold;
+} */
+
+/* .titulo-central:before {
+  content: "[ ";
+}
+
+.titulo-central:after {
+  content: " ]";
+} */
+
+/*transforma a primeira linha em negrito
+  .titulo-central:first-line {
+    font-weight: bold;
+  }*/

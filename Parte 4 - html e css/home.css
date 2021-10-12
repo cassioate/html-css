@@ -75,6 +75,24 @@
   clear: left;
 }
 
+/* transforma a primeira letra em negrito
+.titulo-central:first-letter {
+  font-weight: bold;
+} */
+
+.titulo-central:before {
+  content: "[ ";
+}
+
+.titulo-central:after {
+  content: " ]";
+}
+
+/*transforma a primeira linha em negrito
+.titulo-central:first-line {
+  font-weight: bold;
+}*/
+
 .mapa {
   padding: 3em 0;
   /* Esse gradient seria um exemplo dele em 45 graus, indo com laranja até 50% do total e o resto sendo dividido entre blue, red e black.
@@ -112,6 +130,10 @@
 
 .item-beneficios {
   line-height: 1.5;
+}
+
+.item-beneficios:before {
+  content: "★ ";
 }
 
 /*Seleciona o primeiro elemento de uma lista*/
